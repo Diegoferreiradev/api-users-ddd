@@ -1,5 +1,7 @@
 Desenvolvido uma Web API de Usuários com Autenticação
 
+O Foco foi desenvolver um projeto com o .NET 3.1 para Utilizar o Domain-driven design (DDD)
+
 -------------------------------------
 
 
