@@ -26,10 +26,10 @@ namespace Api.Service.Services
             return await _repository.DeleteAsync(id);
         }
 
-        public async Task<UserDtoCreate> Get(Guid id)
+        public async Task<UserDto> Get(Guid id)
         {
             var entity = await _repository.SelectAsync(id);
-            return _mapper.Map<UserDtoCreate>(entity);
+            return _mapper.Map<UserDto>(entity) ?? new UserDto();
         }
 
         public async Task<IEnumerable<UserDto>> GetAll()

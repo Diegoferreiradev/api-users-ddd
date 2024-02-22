@@ -1,5 +1,4 @@
 ﻿using Api.Domain.Dtos.User;
-using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -59,6 +58,7 @@ namespace Api.Application.Controllers
             }
         }
 
+        //[AllowAnonymous]
         [Authorize("Bearer")]
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
