@@ -7,7 +7,9 @@ O Foco foi desenvolver um projeto com o .NET 3.1 para Utilizar o Domain-driven d
 
 Projeto - Api de Usuários
 
-Pattern DDD
+DDD
+
+MVVM
 
 WEB API
 
